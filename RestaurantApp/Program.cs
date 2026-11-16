@@ -20,7 +20,7 @@ namespace RestaurantApp
     new Restaurant(4, "Huguosi Snak", "Snack",4.2),
     new Restaurant(5, "Haidilo Hot pot", "Hot Pot", 4.8)
 };
-foreach (var item in restaurants)
+            foreach (var item in restaurants)
             {
                 Console.WriteLine($"{item.Id}. {item.Name}. ({item.Category}) -Reting: {item.Rating}");
             }
@@ -29,6 +29,7 @@ foreach (var item in restaurants)
             Console.WriteLine($"Total is {amount}");
             Console.WriteLine($"Average is {avg}");
         }
+
     }
     public class Restaurant
     {
@@ -44,8 +45,6 @@ foreach (var item in restaurants)
             this.Category = category;
             this.Rating = rating;
         }
-
-
     }
 
 }
